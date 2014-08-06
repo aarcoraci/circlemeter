@@ -1,0 +1,93 @@
+<html>
+
+<head>
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/jquery.circlemeter.js"></script>
+    <style type="text/css">
+        .wrapper1 {
+            border: 5px solid #E7D59C;
+            background-color: #FDE797;
+        }
+        .wrapper1 .inner {
+            background-color: #B0DBCD;
+            border: 3px solid red;
+        }
+        .wrapper2 {
+            border: 5px solid #2B1D37;
+            background-color: #61294C;
+        }
+        .wrapper2 .inner {
+            background-color: #CCB39D;
+        }
+        .wrapper3 {
+            border: 2px solid #CDA8ED;
+            background-color: #ECA7C6;
+        }
+        .wrapper3 .inner {
+            background-color: #A8CCED;
+        }
+        table td {
+            text-align: center;
+            font-family: Arial;
+            color: #888888;
+        }
+    </style>
+    <script type="text/javascript">
+        $(function() {
+            $(".wrapper1").circleMetter({
+                size: 200,
+                target: "50%"
+            });
+
+            $(".wrapper2").circleMetter({
+                size: 200,
+                target: "70%"
+            });
+
+            $(".wrapper3").circleMetter({
+                size: 200,
+                target: 45
+            });
+        });
+    </script>
+
+
+    <script type="text/javascript">
+    </script>
+</head>
+
+<body>
+
+
+    <table style="width:100%">
+        <tr>
+            <td>
+                <div class="wrapper wrapper1">
+
+                </div>
+            </td>
+            <td>
+                <div class="wrapper wrapper2">
+
+                </div>
+            </td>
+            <td>
+                <div class="wrapper wrapper3">
+
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>label 1</td>
+            <td>label 2</td>
+            <td>label 3</td>
+        </tr>
+    </table>
+
+
+
+
+
+</body>
+
+</html>
